@@ -1,4 +1,5 @@
-images/**
+*.osm.pbf
+*.img
 sea-latest.zip
 bounds-latest.zip
 tiles/**

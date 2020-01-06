@@ -19,7 +19,7 @@ The map data (*.pbf) files in this folder were downloaded from <https://download
 Use a command like;
 
 ```
-java -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-dir=out/canaryislands
+java -Xmx2000M -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-dir=out/canaryislands
 ```
 
 # Get the bounds data
@@ -36,7 +36,7 @@ Seah data can be downloaded from http://osm.thkukuk.de/data/sea-latest.zip
 Use a command like;
 
 ```
-java -jar mkgmap.jar --route --add-pois-to-areas --bounds=bounds --index --cycle-map  --gmapsupp out/canaryislands/6324*.osm.pbf --output-dir=images/canaryislands
+java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --bounds=bounds --index --cycle-map  --gmapsupp out/canaryislands/6324*.osm.pbf --output-dir=images/canaryislands
 ```
 
 # Concatenate two maps (had problems getting this to work)
@@ -44,26 +44,47 @@ java -jar mkgmap.jar --route --add-pois-to-areas --bounds=bounds --index --cycle
 Use a command like;
 
 ```
-java -jar mkgmap.jar --gmapsupp your-existing-map.img map-you-want-to-add.img
+java -Xmx2000M -jar mkgmap.jar --gmapsupp your-existing-map.img map-you-want-to-add.img
 ```
 
 # Splitter Commands used
 
 ```
-  586  java -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-dir=out/canaryislands --mapid=73240001
-  588  java -jar splitter.jar regions/great-britain-latest.osm.pbf --output-dir=out/gb --mapid=83240001
-  591  java -jar splitter.jar regions/spain-latest.osm.pbf --output-dir=out/spain --mapid=93240001
-  593  java -jar splitter.jar regions/italy-latest.osm.pbf --output-dir=out/italy --mapid=13240001
-  595  java -jar splitter.jar regions/dach-latest.osm.pbf --output-dir=out/dach --mapid=23240001
-  600  java -jar splitter.jar regions/sweden-latest.osm.pbf --output-dir=out/sweden --mapid=33240001
-  601  java -jar splitter.jar regions/sweden-latest.osm.pbf --output-dir=out/sweden --mapid=43240001
-  603  java -jar splitter.jar regions/ireland-and-northern-ireland-latest.osm.pbf --output-dir=out/ireland --mapid=53240001
+java -Xmx2000M -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-dir=out/canaryislands --mapid=73240001
+java -Xmx2000M -jar splitter.jar regions/spain-latest.osm.pbf --output-dir=out/spain --mapid=93240001
+
+
+java -Xmx2000M -jar splitter.jar regions/ireland-and-northern-ireland-latest.osm.pbf --output-dir=out/ireland --mapid=53240001
+java -Xmx2000M -jar splitter.jar regions/great-britain-latest.osm.pbf --output-dir=out/gb --mapid=83240001
+
+java -Xmx2000M -jar splitter.jar regions/italy-latest.osm.pbf --output-dir=out/italy --mapid=13240001
+java -Xmx2000M -jar splitter.jar regions/dach-latest.osm.pbf --output-dir=out/dach --mapid=23240001
+java -Xmx2000M -jar splitter.jar regions/sweden-latest.osm.pbf --output-dir=out/sweden --mapid=33240001
+java -Xmx2000M -jar splitter.jar regions/sweden-latest.osm.pbf --output-dir=out/sweden --mapid=43240001
+java -Xmx2000M -jar splitter.jar regions/ireland-and-northern-ireland-latest.osm.pbf --output-dir=out/ireland --mapid=53240001
 ```
 
+## Splitter subsequent runs
+
+If you use the generated `areas.tiles` file and `areas.poly` file, it makes subsequent processing quicker. See
+
+```
+java -Xmx2000M -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-dir=out/canaryislands --precomp-sea=sea-latest.zip --polygon-file=out/canaryislands/areas.poly --split-file=out/canaryislands/areas.list --description="OSM Canary Islands Map"
+```
+
+note also that precomp-sea can be used in the same way it is used for mkgmap
+
+note the description passed to the command (this gets stored in the generated `template.args` file)
 # MkgMap Command
 
 I had problems getting maps to concatenate using mkgmap so I changed the mapid for each location used and then created a single map image.  even with this I had memory issues creating a large map with all locations, so best just to create separate images for the locations you need.
 
 ```
 java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --precomp-sea=sea-latest.zip --bounds=bounds-latest.zip --index --gmapsupp tiles/*.osm.pbf --cycle-map --output-dir=images/
+```
+
+You can pass the `template.args` file created by splitter as an argument to mkgmap. See
+
+```
+java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --precomp-sea=sea-latest.zip --bounds=bounds-latest.zip --index --gmapsupp --cycle-map --output-dir=images/gb/ -c out/gb/template.args --mapname=19650001 out/gb/*.osm.pbf
 ```

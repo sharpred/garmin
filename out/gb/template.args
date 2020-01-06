@@ -1,0 +1,332 @@
+#
+# This file can be given to mkgmap using the -c option
+# Please edit it first to add a description of each map.
+#
+
+# You can set the family id for the map
+# family-id: 980
+# product-id: 1
+
+# Following is a list of map tiles.  Add a suitable description
+# for each one.
+
+mapname: 63240001
+description: OSM Great Britain
+input-file: 63240001.osm.pbf
+
+mapname: 63240002
+description: OSM Great Britain
+input-file: 63240002.osm.pbf
+
+mapname: 63240003
+description: OSM Great Britain
+input-file: 63240003.osm.pbf
+
+mapname: 63240004
+description: OSM Great Britain
+input-file: 63240004.osm.pbf
+
+mapname: 63240005
+description: OSM Great Britain
+input-file: 63240005.osm.pbf
+
+mapname: 63240006
+description: OSM Great Britain
+input-file: 63240006.osm.pbf
+
+mapname: 63240007
+description: OSM Great Britain
+input-file: 63240007.osm.pbf
+
+mapname: 63240008
+description: OSM Great Britain
+input-file: 63240008.osm.pbf
+
+mapname: 63240009
+description: OSM Great Britain
+input-file: 63240009.osm.pbf
+
+mapname: 63240010
+description: OSM Great Britain
+input-file: 63240010.osm.pbf
+
+mapname: 63240011
+description: OSM Great Britain
+input-file: 63240011.osm.pbf
+
+mapname: 63240012
+description: OSM Great Britain
+input-file: 63240012.osm.pbf
+
+mapname: 63240013
+description: OSM Great Britain
+input-file: 63240013.osm.pbf
+
+mapname: 63240014
+description: OSM Great Britain
+input-file: 63240014.osm.pbf
+
+mapname: 63240015
+description: OSM Great Britain
+input-file: 63240015.osm.pbf
+
+mapname: 63240016
+description: OSM Great Britain
+input-file: 63240016.osm.pbf
+
+mapname: 63240017
+description: OSM Great Britain
+input-file: 63240017.osm.pbf
+
+mapname: 63240018
+description: OSM Great Britain
+input-file: 63240018.osm.pbf
+
+mapname: 63240019
+description: OSM Great Britain
+input-file: 63240019.osm.pbf
+
+mapname: 63240020
+description: OSM Great Britain
+input-file: 63240020.osm.pbf
+
+mapname: 63240021
+description: OSM Great Britain
+input-file: 63240021.osm.pbf
+
+mapname: 63240022
+description: OSM Great Britain
+input-file: 63240022.osm.pbf
+
+mapname: 63240023
+description: OSM Great Britain
+input-file: 63240023.osm.pbf
+
+mapname: 63240024
+description: OSM Great Britain
+input-file: 63240024.osm.pbf
+
+mapname: 63240025
+description: OSM Great Britain
+input-file: 63240025.osm.pbf
+
+mapname: 63240026
+description: OSM Great Britain
+input-file: 63240026.osm.pbf
+
+mapname: 63240027
+description: OSM Great Britain
+input-file: 63240027.osm.pbf
+
+mapname: 63240028
+description: OSM Great Britain
+input-file: 63240028.osm.pbf
+
+mapname: 63240029
+description: OSM Great Britain
+input-file: 63240029.osm.pbf
+
+mapname: 63240030
+description: OSM Great Britain
+input-file: 63240030.osm.pbf
+
+mapname: 63240031
+description: OSM Great Britain
+input-file: 63240031.osm.pbf
+
+mapname: 63240032
+description: OSM Great Britain
+input-file: 63240032.osm.pbf
+
+mapname: 63240033
+description: OSM Great Britain
+input-file: 63240033.osm.pbf
+
+mapname: 63240034
+description: OSM Great Britain
+input-file: 63240034.osm.pbf
+
+mapname: 63240035
+description: OSM Great Britain
+input-file: 63240035.osm.pbf
+
+mapname: 63240036
+description: OSM Great Britain
+input-file: 63240036.osm.pbf
+
+mapname: 63240037
+description: OSM Great Britain
+input-file: 63240037.osm.pbf
+
+mapname: 63240038
+description: OSM Great Britain
+input-file: 63240038.osm.pbf
+
+mapname: 63240039
+description: OSM Great Britain
+input-file: 63240039.osm.pbf
+
+mapname: 63240040
+description: OSM Great Britain
+input-file: 63240040.osm.pbf
+
+mapname: 63240041
+description: OSM Great Britain
+input-file: 63240041.osm.pbf
+
+mapname: 63240042
+description: OSM Great Britain
+input-file: 63240042.osm.pbf
+
+mapname: 63240043
+description: OSM Great Britain
+input-file: 63240043.osm.pbf
+
+mapname: 63240044
+description: OSM Great Britain
+input-file: 63240044.osm.pbf
+
+mapname: 63240045
+description: OSM Great Britain
+input-file: 63240045.osm.pbf
+
+mapname: 63240046
+description: OSM Great Britain
+input-file: 63240046.osm.pbf
+
+mapname: 63240047
+description: OSM Great Britain
+input-file: 63240047.osm.pbf
+
+mapname: 63240048
+description: OSM Great Britain
+input-file: 63240048.osm.pbf
+
+mapname: 63240049
+description: OSM Great Britain
+input-file: 63240049.osm.pbf
+
+mapname: 63240050
+description: OSM Great Britain
+input-file: 63240050.osm.pbf
+
+mapname: 63240051
+description: OSM Great Britain
+input-file: 63240051.osm.pbf
+
+mapname: 63240052
+description: OSM Great Britain
+input-file: 63240052.osm.pbf
+
+mapname: 63240053
+description: OSM Great Britain
+input-file: 63240053.osm.pbf
+
+mapname: 63240054
+description: OSM Great Britain
+input-file: 63240054.osm.pbf
+
+mapname: 63240055
+description: OSM Great Britain
+input-file: 63240055.osm.pbf
+
+mapname: 63240056
+description: OSM Great Britain
+input-file: 63240056.osm.pbf
+
+mapname: 63240057
+description: OSM Great Britain
+input-file: 63240057.osm.pbf
+
+mapname: 63240058
+description: OSM Great Britain
+input-file: 63240058.osm.pbf
+
+mapname: 63240059
+description: OSM Great Britain
+input-file: 63240059.osm.pbf
+
+mapname: 63240060
+description: OSM Great Britain
+input-file: 63240060.osm.pbf
+
+mapname: 63240061
+description: OSM Great Britain
+input-file: 63240061.osm.pbf
+
+mapname: 63240062
+description: OSM Great Britain
+input-file: 63240062.osm.pbf
+
+mapname: 63240063
+description: OSM Great Britain
+input-file: 63240063.osm.pbf
+
+mapname: 63240064
+description: OSM Great Britain
+input-file: 63240064.osm.pbf
+
+mapname: 63240065
+description: OSM Great Britain
+input-file: 63240065.osm.pbf
+
+mapname: 63240066
+description: OSM Great Britain
+input-file: 63240066.osm.pbf
+
+mapname: 63240067
+description: OSM Great Britain
+input-file: 63240067.osm.pbf
+
+mapname: 63240068
+description: OSM Great Britain
+input-file: 63240068.osm.pbf
+
+mapname: 63240069
+description: OSM Great Britain
+input-file: 63240069.osm.pbf
+
+mapname: 63240070
+description: OSM Great Britain
+input-file: 63240070.osm.pbf
+
+mapname: 63240071
+description: OSM Great Britain
+input-file: 63240071.osm.pbf
+
+mapname: 63240072
+description: OSM Great Britain
+input-file: 63240072.osm.pbf
+
+mapname: 63240073
+description: OSM Great Britain
+input-file: 63240073.osm.pbf
+
+mapname: 63240074
+description: OSM Great Britain
+input-file: 63240074.osm.pbf
+
+mapname: 63240075
+description: OSM Great Britain
+input-file: 63240075.osm.pbf
+
+mapname: 63240076
+description: OSM Great Britain
+input-file: 63240076.osm.pbf
+
+mapname: 63240077
+description: OSM Great Britain
+input-file: 63240077.osm.pbf
+
+mapname: 63240078
+description: OSM Great Britain
+input-file: 63240078.osm.pbf
+
+mapname: 63240079
+description: OSM Great Britain
+input-file: 63240079.osm.pbf
+
+mapname: 63240080
+description: OSM Great Britain
+input-file: 63240080.osm.pbf
+
