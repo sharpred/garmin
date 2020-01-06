@@ -30,23 +30,6 @@ Bounds can be downloaded from <http://osm.thkukuk.de/data/bounds-latest.zip>
 
 Seah data can be downloaded from http://osm.thkukuk.de/data/sea-latest.zip
 
-
-# Create the Garmin Map
-
-Use a command like;
-
-```
-java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --bounds=bounds --index --cycle-map  --gmapsupp out/canaryislands/6324*.osm.pbf --output-dir=images/canaryislands
-```
-
-# Concatenate two maps (had problems getting this to work)
-
-Use a command like;
-
-```
-java -Xmx2000M -jar mkgmap.jar --gmapsupp your-existing-map.img map-you-want-to-add.img
-```
-
 # Splitter Commands used
 
 ```
@@ -75,13 +58,33 @@ java -Xmx2000M -jar splitter.jar regions/canary-islands-latest.osm.pbf --output-
 note also that precomp-sea can be used in the same way it is used for mkgmap
 
 note the description passed to the command (this gets stored in the generated `template.args` file)
+
 # MkgMap Command
+
+## Create the Garmin Map
+
+Use a command like;
+
+```
+java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --bounds=bounds --index --cycle-map  --gmapsupp out/canaryislands/6324*.osm.pbf --output-dir=images/canaryislands
+```
+
+## Concatenate two maps (had problems getting this to work)
+
+Use a command like;
+
+```
+java -Xmx2000M -jar mkgmap.jar --gmapsupp your-existing-map.img map-you-want-to-add.img
+```
+
 
 I had problems getting maps to concatenate using mkgmap so I changed the mapid for each location used and then created a single map image.  even with this I had memory issues creating a large map with all locations, so best just to create separate images for the locations you need.
 
 ```
 java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --precomp-sea=sea-latest.zip --bounds=bounds-latest.zip --index --gmapsupp tiles/*.osm.pbf --cycle-map --output-dir=images/
 ```
+
+## Using pregenerated template data
 
 You can pass the `template.args` file created by splitter as an argument to mkgmap. See
 
