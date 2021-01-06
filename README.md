@@ -52,10 +52,27 @@ java -Xmx2000M -jar splitter.jar regions/ireland-and-northern-ireland-latest.osm
 I used
 
 ```
-java -Xmx2000M -jar splitter.jar regions/great-britain-latest.osm.pbf --output-dir=out/gb --mapid=83240001
+java -Xmx2000M -jar splitter.jar \
+  regions/great-britain-latest.osm.pbf \
+  --output-dir=out/gb \
+  --mapid=83240001 \
+  --description="OSM GB Jan 2021"
 
-java -Xmx2000M -jar mkgmap.jar --route --add-pois-to-areas --precomp-sea=data/sea-latest.zip --bounds=data/bounds-latest.zip --index --gmapsupp --cycle-map --output-dir=images/gb/ -c out/gb/template.args --mapname=83240001 out/gb/8324*.osm.pbf
+java -Xmx2000M -jar mkgmap.jar \ 
+ --route \
+ --add-pois-to-areas \
+ --precomp-sea=data/sea-latest.zip \
+ --bounds=data/bounds-latest.zip \
+ --index \
+ --gmapsupp \
+ --cycle-map \
+ --output-dir=images/gb/ \
+ -c out/gb/template.args \
+ --mapname=83240001 \
+ out/gb/8324*.osm.pbf
 ```
+
+use `run.sh` to run everything in one script.  Edit the file to change the description of the resultant map.  The file images/gmapsupp.img should be copied to the Garmin folder of the SD card in your Garmin device.
 
 ## Splitter subsequent runs
 
