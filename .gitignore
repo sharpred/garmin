@@ -4,5 +4,9 @@ sea-latest.zip
 bounds-latest.zip
 tiles/**
 oldimages/**
-images/**
-out/**
+images/ci/**
+images/gb/**
+images/ireland/**
+out/ci/**
+out/gb/**
+out/ireland/**
